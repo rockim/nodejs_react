@@ -29,11 +29,26 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							import: true,
 							localsConvention: 'camelCase',
 							modules: true,
 							sourceMap: true
 						}
 					}
+				]
+			},
+			{
+				test: /\.sass$/,
+				use: [
+					{
+                                                loader: 'sass-loader',
+                                                options: {
+                                                        implementation: require('sass'),
+                                                        sassOptions: {
+                                                                fiber: false,
+                                                        }
+                                                }
+                                        }
 				]
 			},
 			{
