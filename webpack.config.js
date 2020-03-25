@@ -30,9 +30,7 @@ module.exports = {
 						loader: 'css-loader',
 						options: {
 							import: true,
-							localsConvention: 'camelCase',
 							modules: true,
-							sourceMap: true
 						}
 					}
 				]
