@@ -1,21 +1,26 @@
 import React, { Component }  from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Image,Container,Row,Col } from 'react-bootstrap';
 import Nav from './navbar';
+import challenger from './img/challenger_1.png';
+import Drop from './tierdown';
+import Custom from './Customdrop';
 function App () {
 	return (
 		<div>
 		  <Nav></Nav>
-		  <br />
-		  <Button variant="primary">Primary</Button>{' '}
-  		  <Button variant="secondary">Secondary</Button>{' '}
-  		  <Button variant="success">Success</Button>{' '}
-  		  <Button variant="warning">Warning</Button>{' '}
-  		  <Button variant="danger">Danger</Button> 
-		  <Button variant="info">Info</Button>{' '}
-		  <Button variant="light">Light</Button> <Button variant="dark">Dark</Button>{' '}
-		  <Button variant="link">Link</Button>
+		  <div>
+		   <Drop></Drop>
+		   <Custom></Custom>
+		   <br />
+		   <Container>
+			<Row>
+				<Col xs={6} md = {4}>
+		   		  <Image src= {challenger} rounded  />
+				</Col>
+			</Row>
+		   </Container>
+		  </div>
 		</div>
 	)
 }
-
 export default App;

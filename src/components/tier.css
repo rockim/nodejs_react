@@ -1,0 +1,32 @@
+.Bronze {
+	background-color: #523314;
+	color: #fff;
+}
+
+.Silver {
+	background-color: #84898b;
+}
+
+.Gold {
+	background-color: #d5b329;
+}
+
+.Platinum {
+	background-color: #5cb85c;
+}
+
+.Diamond {
+	background-color: #524ffb;
+}
+
+.Master {
+	background-color: #5c24fc;
+}
+
+.Grandmaster {
+	background-color: #f40404;
+}
+
+.Challenger {
+	background-color: #0275d8;
+}
