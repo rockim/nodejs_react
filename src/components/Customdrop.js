@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap';
-import { Bronze } from './tier.css'
+import { TierDropdown, Bronze } from './tier.css'
 	const CustomToggle = React.forwardRef(({children,onClick,className } ,ref) =>
-		(
-			<a
-			  href=""
-			  ref={ref}
-			  onClick={(e) => {
-				  e.preventDefault();
-				  onClick(e);
-			  }}
-			  className={Bronze}
-			>
-			  {children}
-			  &#x25bc;
-			</a>
+		(	<div>
+				<a
+			  	 href=""
+			  	 ref={ref}
+			  	 onClick={(e) => {
+					e.preventDefault();
+				  	onClick(e);
+			  	 }}
+			  	 className={Bronze}
+				>
+			  	{children}
+			  	&#x25bc;
+				</a>
+			</div>
 		));
 	const CustomMenu = React.forwardRef(
 		({children, style, className, 'aria-labelledby': labeledBy }, ref)=> {
@@ -27,7 +28,7 @@ import { Bronze } from './tier.css'
 				  className={className}
 				  aria-labelledby={labeledBy}
 				>
-				  <ul className={Bronze}>
+				  <ul className={TierDropdown}>
 					{React.Children.toArray(children).filter(
 						(child) =>
 						  !value || child.props.children.toLowerCase().startsWith(value),

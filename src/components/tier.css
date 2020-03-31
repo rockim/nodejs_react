@@ -1,6 +1,16 @@
+.TierDropdown {
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+
 .Bronze {
 	background-color: #523314;
 	color: #fff;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
 
 .Silver {

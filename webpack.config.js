@@ -50,13 +50,13 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(ttf|eot|svg)$/,
+				test: /\.(png|jpe?g|gif|ttf|eot|svg)$/,
 				use: [	
 					{
 						loader: 'file-loader',
 						options: {
-							publicPath: './src/components/',
-							name: '[name].[ext]?[hash]'
+							name: '[name].[ext]?[hash]',
+							outputPath: 'img/'
 						}
 					}
 				]
