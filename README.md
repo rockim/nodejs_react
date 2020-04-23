@@ -1,1 +1,1 @@
-This project was react(bootstrap)
+The project is to become familiar with React.
